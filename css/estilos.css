@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(banner2.css);
+@import url(proyectos.css);
+@import url(servicios.css);
+@import url(investigacion.css);
+@import url(recursos.css);
+@import url(referencias.css);
+@import url(pie.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header h1{
+    font-size: 30px;
+    margin: 7px;
+    padding-left: 0px;
+}
+header img{
+    width: 200px;
+    height: 60px;
+    padding-right: 10px;
+}
+header #logo{
+    transform: translateY(6px);
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto; 
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+section .mas{
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #333;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.mas:hover,
+.mas:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.mas:active {
+  background: var(--color);
+  color: #000;
+}
+section .mas2{
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #fff;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #333;
+    outline-offset: .4em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .mas2:hover,
+  .mas2:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .mas2:active {
+    background: var(--color);
+    color: #000;
+  }
+
+#recientes{
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.contact{
+    font-size: 20px;
+}
+
+.redes{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.redes a{
+    color: #333;
+    text-decoration: none;
+}
+.redes img{
+    width: 6%;
+    height: 30%;
+}
+
+@media (min-width:730px){
+    .redes {
+        width: auto;
+    }
+    .redes img{
+        width: 12%;
+        height: 60%;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
