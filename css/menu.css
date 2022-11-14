@@ -43,7 +43,7 @@ header label{
 .current{
     background-color: rgba(255,255,255,0.3);
 }
-@media (min-width:960px){
+@media (min-width:1023px){
     .menu{
         position: static;
         width: auto;
